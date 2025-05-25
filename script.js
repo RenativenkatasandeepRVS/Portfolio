@@ -1,12 +1,3 @@
-function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("active");
-    }
-
-    function closeMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.remove("active");
-    }
 const track = document.querySelector('.carousel-track');
 const slides = document.querySelectorAll('.project-slide');
 const nextBtn = document.querySelector('.carousel-btn.next');
