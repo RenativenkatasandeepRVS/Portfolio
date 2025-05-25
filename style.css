@@ -145,7 +145,7 @@
   .about-content,
   .about-content.reverse {
     flex-direction: column;
-    text-align: justify;
+    text-align: center;
   }
 
   .about-img {
