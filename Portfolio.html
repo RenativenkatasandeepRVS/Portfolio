@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep | Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sandeep</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="section">
+  <div class="glass home-container">
+    <div class="home-image">
+      <img src="./my images/My Profile.jpg" alt="Renati Venkata Sandeep" />
+    </div>
+    <div class="home-text">
+      <h2 class="title">Hi, I'm <span class="highlight">Renati Venkata Sandeep</span></h2>
+      <p>SAP SuccessFactors SPCDP and LMS Consultant | Full Stack Developer | Tech Explorer</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="section">
+    <div class = "glass">
+  <div class="about-container">
+    <h2 class="title">About Me</h2>
+
+    <!-- First Block: Image Left -->
+    <div class="about-content">
+      <img src="./my images/svuce image.avif" alt="My Image" class="about-img" />
+      <p class="about-text">
+        I am an Electronics and Communication Engineering graduate from Sri Venkateswara University College of Engineering. My academic background laid a strong foundation in logical reasoning, communication systems, and core engineering principles. With a keen interest in the evolving landscape of technology, I made the transition into the software domain, where I began my professional journey as an Associate Software Engineer.
+      </p>
+    </div>
+
+    <!-- Second Block: Image Right -->
+    <div class="about-content reverse">
+      <img src="./my images/Accenture.jpg" alt="Accenture" class="about-img" />
+      <p class="about-text">
+        Currently, I work as a Consultant in the SAP domain, specializing in SAP SuccessFactors modules such as SPCDP and LMS. In this role, I help organizations implement cloud-based HR solutions that enhance workforce learning and development. My responsibilities often involve process optimization, configuration, and troubleshooting, allowing me to combine technical skills with strategic thinking.
+      </p>
+    </div>
+
+    <!-- Third Block: Image Left -->
+    <div class="about-content">
+      <img src="./my images/AI.jpg" alt="AI" class="about-img" />
+      <p class="about-text">
+        Beyond my professional experience, I am deeply passionate about artificial intelligence and its transformative impact on the tech industry. I continuously strive to learn, innovate, and stay updated with emerging trends. I am eager to contribute to an organization where I can not only apply my skills but also grow alongside it—adding value through my work and evolving as a well-rounded technology professional.<br />
+        Here's my <a href = "./my images/Accenture.jpg">Resume</a> to know more about me
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="projects" class="section">
+  <h2 class="title">Projects</h2>
+  <div class="project-carousel">
+    <div class="carousel-track">   
+      <div class="project-slide digit-classification">
+        <div class="content">
+          <h3>Digit Classifier</h3>
+          <p>Built a CNN model to recognize handwritten digits with >95% accuracy.</p>
+          <a href="https://github.com/RenativenkatasandeepRVS/Digit-Classifier.git" target="_blank">GitHub</a>
+          <a href="https://drive.google.com/drive/folders/1RviRi9JnLTrCpgXQpFpst7zKQqcy73hx?usp=sharing" target="_blank">Drive</a>
+        </div>
+      </div>
+      <div class="project-slide smart-blind-stick">
+        <div class="content">
+          <h3>Smart Blind Stick</h3>
+          <p>Helps visually impaired navigate using ultrasonic sensors and Arduino.</p>
+          <a href="https://github.com/RenativenkatasandeepRVS/Smart-Blind-Stick" target="_blank">GitHub</a>
+          <a href="https://drive.google.com/drive/folders/1jwrWMZfUrWeEeUf1X8WnvS6gaZNeDUBF?usp=sharing" target="_blank">Drive</a>
+        </div>
+      </div>
+       <div class="project-slide digital-signal-processing">
+        <div class="content">
+          <h3>Satellite Image Segmentation</h3>
+          <p>Processed satellite images to classify land cover using ML models.</p>
+          <a href="https://pathipatiyashwanthsai.github.io/DSP-Algorithms/" target="_blank">GitHub</a>
+          <a href="https://drive.google.com/drive/folders/1wcnf0EkjegxKxQIlnj3PuL79dIMKjBWW?usp=sharing" target="_blank">Drive</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="glass" style="background-color: rgba(0, 0, 0, 0.7); padding: 3rem; border-radius: 20px;">
+    <h2 class="title" style="text-align: center; font-size: 2.5rem;">Wanna have a coffee with me?</h2>
+    <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">Let’s connect! Drop your details and I’ll reach out ☕</p>
+    
+    <form action="https://formspree.io/f/mwpodobn" method="POST" style="display: flex; flex-direction: column; gap: 1rem; max-width: 600px; margin: 0 auto;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding: 1rem; border-radius: 10px; border: none;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding: 1rem; border-radius: 10px; border: none;">
+      <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 1rem; border-radius: 10px; border: none;"></textarea>
+      <button type="submit" style="padding: 1rem; border: none; border-radius: 10px; background: #d2691e; color: white; font-size: 1.1rem; cursor: pointer;">Send Message</button>
+    </form>
+  </div>
+</section>
+<script src="./script.js"></script>
+<footer>
+  © 2025 Renati Venkata Sandeep
+</footer>
+</body>
+</html>

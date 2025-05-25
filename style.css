@@ -1,0 +1,276 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .title{
+        margin-bottom: 2rem;
+    }
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.home-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.home-image img {
+  width: 250px;
+  height: 300px;
+  object-fit:cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.05);
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcb05;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      backdrop-filter: blur(10px);
+    }
+.about-container {
+  padding: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .about-content,
+  .about-content.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.project-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.project-slide {
+  min-width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.project-slide .content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.project-slide h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-slide p {
+  margin-bottom: 1rem;
+}
+
+.project-slide a {
+  margin-right: 1rem;
+  color: #00f0ff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000000aa;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-slide {
+    height: 300px;
+    padding: 1rem;
+  }
+
+  .project-slide h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
+    .highlight {
+      color: #ffcb05;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    form input,
+    form textarea,
+    form button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+    }
+    form input,
+    form textarea {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+    form button {
+      background-color: #ffcb05;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #ccc;
+    }
+    img{
+        float: left;
+        border-radius: 50px;
+    }
+   
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+    }
+    .smart-blind-stick{
+        background-image: url('./my images/Smart Blind Stick.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .digit-classification{
+        background-image: url('./my\ images/Digit Classification.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .digital-signal-processing{
+        background-image: url('./my\ images/Digital Signal Processing.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
