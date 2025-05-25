@@ -109,7 +109,7 @@
   .about-content,
   .about-content.reverse {
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
   }
 
   .about-img {
