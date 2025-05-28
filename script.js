@@ -20,3 +20,32 @@ prevBtn.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', updateCarousel);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("mobile-nav");
+  const links = nav.querySelectorAll("a");
+
+   hamburger.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+
+  // On nav link click: hide menu and scroll
+  links.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // Prevent default anchor behavior
+
+      // Hide the nav by removing 'show'
+      nav.classList.remove("show");
+
+      // Scroll to the section
+      const targetId = link.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+});
